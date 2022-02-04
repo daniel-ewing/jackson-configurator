@@ -9,7 +9,7 @@
     <properties>
 <!--        Note carefully: to avoid conflicts, the <spin.version> property must be set to exactly match -->
 <!--        the version of spin artifacts used by the target Camunda Platform version.-->
-<!--        For example: Camunda Platform 7.15.8-ee uses sppin version 1.10.2 artifacts.-->
+<!--        For example: Camunda Platform 7.15.8-ee uses spin version 1.10.2 artifacts.-->
         <spin.version>1.10.2</spin.version>
         <jackson-datatype-jsr310.version>2.13.1</jackson-datatype-jsr310.version>
         <maven.compiler.source>1.8</maven.compiler.source>

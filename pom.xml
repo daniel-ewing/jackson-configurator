@@ -12,6 +12,7 @@
 <!--        For example: Camunda Platform 7.15.8-ee uses spin version 1.10.2 artifacts.-->
         <spin.version>1.10.2</spin.version>
         <jackson-datatype-jsr310.version>2.13.1</jackson-datatype-jsr310.version>
+        <jackson-datatype-joda.version>2.9.9</jackson-datatype-joda.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
@@ -38,6 +39,11 @@
             <artifactId>jackson-datatype-jsr310</artifactId>
             <version>${jackson-datatype-jsr310.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-joda</artifactId>
+            <version>${jackson-datatype-joda.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -53,4 +59,3 @@
         </plugins>
     </build>
 </project>
-

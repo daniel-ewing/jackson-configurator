@@ -1,4 +1,4 @@
-<module xmlns="urn:jboss:module:1.0" name="org.camunda.bpm.example" >
+<module xmlns="urn:jboss:module:1.0" name="org.camunda.bpm.example.jackson-configurator" slot="1.0" >
   <resources>
     <resource-root path="jackson-configurator-1.0.jar" />
   </resources>
@@ -7,6 +7,6 @@
   <dependencies>
     <module name="org.camunda.spin:camunda-spin-dataformat-json-jackson"  slot="1.10.2"/>
     <module name="com.fasterxml.jackson.datatype:jackson-datatype-jsr310" slot="2.12.1" />
-    <module name="com.fasterxml.jackson.datatype:jackson-datatype-joda" slot="2.9.9" />
+    <module name="com.fasterxml.jackson.datatype:jackson-datatype-joda" slot="2.12.1" />
   </dependencies>
 </module>

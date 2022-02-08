@@ -11,8 +11,12 @@
 <!--        the version of spin artifacts used by the target Camunda Platform version.-->
 <!--        For example: Camunda Platform 7.15.8-ee uses spin version 1.10.2 artifacts.-->
         <spin.version>1.10.2</spin.version>
-        <jackson-datatype-jsr310.version>2.13.1</jackson-datatype-jsr310.version>
-        <jackson-datatype-joda.version>2.9.9</jackson-datatype-joda.version>
+<!--        Note carefully: to avoid conflicts, the <jackson-datatype-jsr310.version> and -->
+<!--        <jackson-datatype-joda.version> properties  must be set to exactly match the version of -->
+<!--        jackson artifacts used by the target Camunda Platform version.  -->
+<!--        For example: Camunda Platform 7.15.8-ee uses jackson version 2.12.1 artifacts -->
+        <jackson-datatype-jsr310.version>2.12.1</jackson-datatype-jsr310.version>
+        <jackson-datatype-joda.version>2.12.1</jackson-datatype-joda.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>

@@ -1,0 +1,9 @@
+<module xmlns="urn:jboss:module:1.0" name="com.fasterxml.jackson.datatype.jackson-datatype-joda" slot="2.12.1" >
+  <resources>
+    <resource-root path="jackson-datatype-joda-2.12.1.jar" />
+  </resources>
+
+  <dependencies>
+    <module name="joda-time:joda-time" slot="2.10.8" />
+  </dependencies>
+</module>

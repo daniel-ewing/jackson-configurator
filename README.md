@@ -14,14 +14,11 @@ The result will be a new artifact:
 
 Install the artifact `jackson-configurator-1.0.jar` as a module in `{WILDFLY_HOME}/modules`, according to the WildFly documentation.  
 
-Note: This usually requires the creation of a `module.xml` file.  The `module.xml` file will most likely need to include information about this artifact's two dependencies.  Be sure to see the note in the `pom.xml` file about the version of the spin artifact:
-```
-org.camunda.spin:camunda-spin-dataformat-json-jackson:1.10.2
-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.1
-```
+Note: This requires the creation of a `module.xml` file.  The `module.xml` file will need to include information about this artifact's dependencies.  Be sure to see the note in the `pom.xml` file about the versions of the artifacts.  As a convenience, see the `module-definitions` directory for:
+* The required directory structure and `module.xml` for this artifact
+* The required directory structure, artifact jar file, and `module.xml` for all dependencies.
 
-
-Add the `jackson-configurator-1.0.jar` artifact as a dependency in your WAR project, e.g.:
+To use this artifact in your project, add the `jackson-configurator-1.0.jar` artifact as a dependency in your project's `pom.xml` file, e.g.:
 ```
 <dependency>
     <groupId>org.camunda.bpm.example</groupId>
@@ -29,7 +26,7 @@ Add the `jackson-configurator-1.0.jar` artifact as a dependency in your WAR proj
     <version>1.0</version>
 </dependency>
 ```
-To be able to build your WAR project, you must either:
+To be able to build your project, you must either:
  
 * First build the `jackson-configurator-1.0.jar` project in the same development environment, so that it can be found in the `.m2` cache.
 

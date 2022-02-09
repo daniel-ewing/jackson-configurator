@@ -3,7 +3,6 @@
     <resource-root path="jackson-configurator-1.0.jar" />
   </resources>
 
-
   <dependencies>
     <module name="org.camunda.spin:camunda-spin-dataformat-json-jackson"  slot="1.10.2"/>
     <module name="com.fasterxml.jackson.datatype:jackson-datatype-jsr310" slot="2.12.1" />

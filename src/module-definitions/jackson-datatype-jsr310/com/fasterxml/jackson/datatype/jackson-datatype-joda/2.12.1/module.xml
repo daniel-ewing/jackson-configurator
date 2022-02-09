@@ -4,6 +4,9 @@
   </resources>
 
   <dependencies>
-    <module name="joda-time:joda-time" slot="2.10.8" />
+    <module name="com.fasterxml.jackson.datatype.jackson-annotations" slot="2.12.1" />
+    <module name="com.fasterxml.jackson.datatype.jackson-core" slot="2.12.1" />
+    <module name="com.fasterxml.jackson.datatype.jackson-databind" slot="2.12.1" />
+    <module name="joda-time.joda-time" slot="2.10.8" />
   </dependencies>
 </module>
